@@ -5,7 +5,7 @@ import Card from "./shared/Card"
 import Button from "./shared/Button"
 
 
-function FeedbackForm({handleAdd}) {
+function FeedbackForm({ handleAdd }) {
     const [text, setText] = useState('')
     const [rating, setRating] = useState(10)
     const [btnDisabled, setbtnDisabled] = useState(true)
@@ -31,7 +31,7 @@ function FeedbackForm({handleAdd}) {
         if(text.trim().length > 10) {
             const newFeedback = {
                 text,
-                rating
+                rating,
             }
 
             handleAdd(newFeedback)
